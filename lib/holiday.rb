@@ -60,7 +60,6 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   # remember to return the updated hash
   holiday_hash.each do |season_target, season_hash|
     if season_target == season
-      #binding.pry
       holiday_hash[season_target] = {holiday_name => supply_array}
       holiday_hash
     end
@@ -91,6 +90,7 @@ def all_supplies_in_holidays(holiday_hash)
     season_hash.each do |holiday, holiday_array|
       holiday = holiday.to_s
       holiday = holiday.sub("_"," ")
+      binding.pry
       holiday = holiday.split.map(&:capitalize).join(' ')
       puts("  #{holiday}: #{holiday_array.join(', ')}")
     end
