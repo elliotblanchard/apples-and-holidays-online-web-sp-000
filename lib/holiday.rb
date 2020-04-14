@@ -90,7 +90,6 @@ def all_supplies_in_holidays(holiday_hash)
     season_hash.each do |holiday, holiday_array|
       holiday = holiday.to_s
       holiday = holiday.gsub("_"," ")
-      binding.pry
       holiday = holiday.split.map(&:capitalize).join(' ')
       puts("  #{holiday}: #{holiday_array.join(', ')}")
     end
