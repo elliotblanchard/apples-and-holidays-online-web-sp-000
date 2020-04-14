@@ -20,9 +20,9 @@ def second_supply_for_fourth_of_july(holiday_hash)
   # return the second element in the 4th of July array
   holiday_hash.each do |season, season_hash|
     if season == :summer
+      binding.pry
       season_hash.each do |holiday, holiday_array|
         if holiday == :fourth_of_july
-          binding.pry
           return holiday_array[1]
         end
       end
