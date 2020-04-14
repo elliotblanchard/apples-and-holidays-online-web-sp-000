@@ -60,7 +60,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   # remember to return the updated hash
   holiday_hash.each do |season_target, season_hash|
     if season_target == season
-      binding.pry
+      #binding.pry
       holiday_hash[season_target] = {:memorial_day_supplies => "fun"}
       #season_hash[holiday_name] => {supply_array}
       holiday_hash
