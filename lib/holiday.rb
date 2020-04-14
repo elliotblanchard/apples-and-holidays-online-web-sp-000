@@ -62,7 +62,6 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
     if season_target == season
       #binding.pry
       holiday_hash[season_target] = {holiday_name => supply_array}
-      #season_hash[holiday_name] => {supply_array}
       holiday_hash
     end
   end
